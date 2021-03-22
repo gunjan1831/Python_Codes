@@ -1,0 +1,14 @@
+def print_rangoli(size):
+    # your code goes here
+     l1=list(map(chr,range(97,123)))
+     lo='-'.join(l1[n-1::-1]+l1[1:n])
+     width=len(lo)
+     for i in range(size-1,0,-1):
+         x=l1[size-1:i:-1]+l1[i:size]
+         m='-'.join(x)
+         print(m.center(width,'-'))
+     print(lo)
+     for i in range(1,size):
+         x=l1[size-1:i:-1]+l1[i:size]
+         m='-'.join(x)
+         print(m.center(width,'-'))
