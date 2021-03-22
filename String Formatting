@@ -1,0 +1,5 @@
+def print_formatted(number):
+    # your code goes here
+    leni=len("{0:b}".format(number))
+    for i in range(1,number+1):
+        print("{0:{leni}d} {0:{leni}o} {0:{leni}X} {0:{leni}b}".format(i,leni=leni))
